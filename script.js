@@ -4,23 +4,23 @@ const RANDOM_NUMBER = Math.floor(99 * Math.random() + 1);
 
 let i = 0;
 while (i < 10) {
-	let input_text = prompt(HEADING);
-    let input_number = Number(input_text);
+	let inputText = prompt(HEADING);
+    let inputNumber = Number(inputText);
 	
-	if (input_text !== null) {
-	    if ((Number.isInteger(input_number)) && ((0 < input_number) && (input_number <= 100)) && (input_text !== '')) {
-		    if (input_number == RANDOM_NUMBER) {
+	if (inputText !== null) {
+	    if ((Number.isInteger(inputNumber)) && ((0 < inputNumber) && (inputNumber <= 100)) && (inputText !== '')) {
+		    if (inputNumber == RANDOM_NUMBER) {
 		        alert('Вы выиграли! Ура!');
                 break;				
 	        } else {
-		        if (input_number < RANDOM_NUMBER) {
+		        if (inputNumber < RANDOM_NUMBER) {
 		            alert('Мое число больше!');
 				    i++;
-		            alert('У вас осталось ' + String(10 - i) + ' попыток');
+		            alert('У вас осталось ' + (10 - i) + ' попыток');
 		        } else {
 			        alert('Мое число меньше!');
 				    i++;
-		            alert('У вас осталось ' + String(10 - i) + ' попыток');
+		            alert('У вас осталось ' + (10 - i) + ' попыток');
 		        }
 	        } 
 	    } else {
