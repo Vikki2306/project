@@ -4,28 +4,26 @@
       <title>Приложение</title>
 	  <meta charset="UTF-8">
       <link href="css/style.css" rel="stylesheet">
+	  
+	  <!-- Начало сценария -->
+	  <script defer type="text/javascript" src="js/script.js"></script>
+	  <!-- Завершение сценария -->
+	  
   </head>
 	
   <body>
       <h1>Угадайка</h1>
-	  <h3>Загадано целое число от 1 до 100. У вас есть 10 попыток, чтобы отгадать его. Удачи!</h3>
-	  
+	  <h3>Загадано целое число от 1 до 100. У вас есть 10 попыток, чтобы отгадать его. Удачи!</h3>  
       <div class="form">
-          <label for="guessField">Введите число: </label>
-          <input type="text" id="guessField" placeholder="Введите число от 1 до 100" class="guessField">
-	      <input type="submit" id="submitGuess" value="Отправить" class="guessSubmit">
+        <label for="guessField">Введите число: </label>   
+        <input type="number" id="guessField" class="guessField" step="1" min="1" max="100">
+        <input type="submit" id="submitGuess" value="Отправить" class="guessSubmit"> 
 	  </div>
 	  
 	  <div>
 	      <img src="img/Lottery-Balls.png" alt="здесь должна быть картинка, но что-то пошло не так" width="580" height="326" class=img">
 	  </div>
-	  
 	  <p id="statements"></p>
-	  
-	  <!-- Начало сценария -->
-	  <script type="text/javascript"  src="js/script.js"></script>
-	  <!-- Завершение сценария -->
-	  
   </body>
 </html>
 
